@@ -1,0 +1,136 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shyam Traders — Electrical Goods, Lalganj</title>
+  <meta name="description" content="Shyam Traders — trusted electrical goods shop in Lalganj since 1994. Wiring, fans, coolers, LEDs, inverters, batteries, heaters and switches." />
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Shyam Traders</h1>
+        <p class="tag">Quality electrical goods since 1994</p>
+      </div>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Your local electrical supplier — trusted for 31+ years</h2>
+          <p>Shyam Traders has served Lalganj and surrounding districts since 1994 with a wide selection of wiring materials, fans, coolers, LEDs, inverters, batteries, heating appliances, switches and sockets.</p>
+          <a class="btn" href="#products">Browse Products</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <!-- decorative SVG to match traditional theme -->
+          <svg width="320" height="220" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect width="320" height="220" rx="12" fill="#f7f4ef"/>
+            <g transform="translate(24,24)" fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round">
+              <path d="M0 140 L60 40 L140 120 L220 20" />
+              <circle cx="200" cy="160" r="18" />
+              <rect x="8" y="100" width="80" height="40" rx="6" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section products">
+      <div class="container">
+        <h3>Our Products</h3>
+        <p class="muted">A hand-picked selection of the electrical essentials we stock.</p>
+        <div class="grid cards">
+          <article class="card">
+            <h4>Wiring & Accessories</h4>
+            <p>Wires, cables, conduit, and essential installation hardware for homes and businesses.</p>
+          </article>
+          <article class="card">
+            <h4>Fans & Coolers</h4>
+            <p>Ceiling fans, table fans and evaporative coolers for every need and budget.</p>
+          </article>
+          <article class="card">
+            <h4>LEDs & Lighting</h4>
+            <p>Energy-efficient LED bulbs, tube lights and fixtures.</p>
+          </article>
+          <article class="card">
+            <h4>Inverters & Batteries</h4>
+            <p>Reliable power backup solutions — inverters, batteries and installation support.</p>
+          </article>
+          <article class="card">
+            <h4>Heating Appliances</h4>
+            <p>Blowers, heaters and room-warmers for colder months.</p>
+          </article>
+          <article class="card">
+            <h4>Switches & Sockets</h4>
+            <p>Durable switches, sockets, and smart modular plates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container two-col">
+        <div>
+          <h3>About Shyam Traders</h3>
+          <p>Founded in 1994, Shyam Traders has been a trusted name across Lalganj and the district for over three decades. Run by Mr. Sanjay Kumar Tiwari, the shop is known for honest service, dependable products, and personal care that only a family-run business can offer.</p>
+          <p>Whether you are wiring a new home, upgrading to energy-efficient lighting, or looking for a dependable inverter and battery—our team will help you find the right solution.</p>
+        </div>
+        <aside class="about-card">
+          <h4>Shop Details</h4>
+          <p><strong>Proprietor:</strong> Mr. Sanjay Kumar Tiwari</p>
+          <p><strong>Phone:</strong> +91 99561 08774, +91 77849 29494</p>
+          <p><strong>Address:</strong> In front of Shop No.1, Tejgaon Complex, in front of SBI Main Road, Lalganj, Raebareli, Uttar Pradesh — 229208</p>
+          <p><strong>Serving Since:</strong> 1994</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h3>Contact & Visit</h3>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <p><strong>Visit us:</strong></p>
+            <p>In front of Shop No.1, Tejgaon Complex, SBI Main Road, Lalganj, Raebareli, UP — 229208</p>
+            <p><strong>Call:</strong> +91 99561 08774, +91 77849 29494</p>
+            <p><em>No email set up yet — call or visit the shop for inquiries.</em></p>
+          </div>
+          <div class="contact-form">
+            <p class="muted">A simple contact form (works locally). When deployed to a host you can connect it to a form backend or email service.</p>
+            <form id="contactForm" onsubmit="submitForm(event)">
+              <label>Full name<input type="text" id="name" required></label>
+              <label>Phone<input type="tel" id="phone"></label>
+              <label>Message<textarea id="message" rows="4" required></textarea></label>
+              <div class="form-actions">
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn ghost" onclick="resetForm()">Reset</button>
+              </div>
+              <p id="formStatus" class="muted" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Shyam Traders — Run by Mr. Sanjay Kumar Tiwari. All rights reserved.</p>
+      <p class="muted small">Designed for Lalganj — traditional theme • Static site ready for GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

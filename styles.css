@@ -1,0 +1,64 @@
+
+/* Traditional theme for Shyam Traders */
+:root{
+  --bg:#fbf7f0;
+  --card:#fff6e8;
+  --accent:#8b3e2f;
+  --muted:#6b5a4a;
+  --text:#2b2b2b;
+  --container:1100px;
+  --radius:12px;
+  --shadow: 0 6px 18px rgba(43,43,43,0.08);
+  font-synthesis: none;
+}
+*{box-sizing:border-box}
+body{font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Noto Sans", "Helvetica Neue", Arial; background:var(--bg); color:var(--text); margin:0; line-height:1.5}
+.container{max-width:var(--container); margin:0 auto; padding:18px}
+.header-inner{display:flex; align-items:center; justify-content:space-between; gap:16px}
+.site-header{background:linear-gradient(180deg, rgba(139,62,47,0.95), rgba(139,62,47,0.85)); color:white; padding:14px 0; box-shadow: 0 6px 18px rgba(0,0,0,0.12)}
+.brand h1{font-size:22px; margin:0; letter-spacing:0.6px}
+.brand .tag{font-size:13px; opacity:0.9; margin-top:4px}
+.top-nav a{color:rgba(255,255,255,0.95); text-decoration:none; margin-left:18px; font-weight:600; font-size:14px}
+.top-nav a:hover{opacity:0.9; text-decoration:underline}
+
+/* Hero */
+.hero{padding:40px 0}
+.hero-inner{display:flex; gap:24px; align-items:center; justify-content:space-between; flex-wrap:wrap}
+.hero-text{flex:1 1 420px}
+.hero-text h2{font-size:26px; margin:0 0 10px; color:var(--accent)}
+.hero-text p{margin:0 0 14px; color:var(--muted)}
+
+.btn{display:inline-block; background:var(--accent); color:white; padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:700; box-shadow:var(--shadow)}
+.btn.ghost{background:transparent; border:2px solid var(--accent); color:var(--accent)}
+
+/* Sections */
+.section{padding:28px 0}
+.section h3{margin:0 0 10px; color:var(--accent)}
+.muted{color:var(--muted)}
+
+/* Grid cards */
+.grid.cards{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:12px}
+.card{background:var(--card); padding:14px; border-radius:10px; box-shadow:var(--shadow)}
+
+/* About two-column */
+.two-col{display:grid; grid-template-columns:1fr 320px; gap:18px; align-items:start}
+.about-card{background:#fff; padding:12px; border-radius:10px; box-shadow:var(--shadow)}
+
+/* Contact */
+.contact-grid{display:grid; grid-template-columns:1fr 420px; gap:18px}
+.contact-form form label{display:block; margin-bottom:8px; font-weight:600}
+.contact-form input, .contact-form textarea{width:100%; padding:10px; border-radius:8px; border:1px solid #e1d8c9; background:white; margin-top:6px}
+.form-actions{display:flex; gap:8px; margin-top:8px}
+
+/* Footer */
+.site-footer{background:#efe6db; padding:16px 0; margin-top:22px}
+.footer-inner{display:flex; justify-content:space-between; gap:12px; align-items:center; flex-wrap:wrap}
+.small{font-size:12px}
+
+/* Responsive */
+@media (max-width:900px){
+  .two-col{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .header-inner{flex-direction:column; align-items:flex-start}
+  .top-nav{display:flex; gap:8px; margin-top:8px}
+}
